@@ -10,6 +10,7 @@ Check the [course syllabus](https://tisem-digital-marketing.github.io/2022-smwa/
 
 * Group Name: YOUR GROUP NAME
 * Group Members: YOUR NAMES
+* Student IDs/Numbers: YOUR STUDENT NUMBERS
 * GitHub Handles: YOUR GH HANDLES
 * Group Leader: YOUR NAME
 
