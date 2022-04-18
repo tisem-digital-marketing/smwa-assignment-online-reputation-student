@@ -16,7 +16,7 @@ Check the [course syllabus](https://tisem-digital-marketing.github.io/2022-smwa/
 
 ## Grading Information
 
-* Due Date: **May 13, 2021 at 23:59 pm**
+* Due Date: **May 13, 2022 at 23:59 pm**
 
 Submission is via GitHub Classroom.
 Your most recent commit that is on the `main` branch that is available online on GitHub before the due date will be graded.
@@ -55,10 +55,9 @@ where you replace "TEAMNAME" with your group's team name.
 
 After you have cloned the repository to your machine, you can download the data for this assignment.
 Open an RStudio session and use this folder as a project.
-The data is downloaded to the `data` sub-directory by running the R script '`data/download_data.R`'.
-When you run this script you will be asked to log in to your Google account to access the data, follow the instructions in the R console to get proceed to get access.
+The data is downloaded to the `data` sub-directory.
 
-Once the data is downloaded, work on the assignment by adding your answers to `assignment_answer.Rmd` where marked.
+Work on the assignment by adding your answers to `assignment_answer.Rmd` where marked.
 Commit your changes periodically so that there is a record of the edits you are making.
 To make your edits available to the rest of the group, you will want to push your commits to the online repository.
 Do this with either: 
