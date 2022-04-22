@@ -102,7 +102,7 @@ Write your answer here
 Write your answer here
 
 5. What is the 'Ashenfelter dip'? 
-   Why do the author's believe they see a pattern akin to an Ashenfelter dip in their application.
+   Why do the authors believe they see a pattern akin to an Ashenfelter dip in their application.
 
 Write your answer here
 
@@ -196,7 +196,7 @@ Write your answer here
 
 Write your answer here
 
-The effect we found above might have different magnitudes for different types of travellers.
+The effect we found above might have different magnitudes for different types of travelers.
 The Proserpio and Zervas data includes information on the type of travel for some rows of data for the years 2009 and after.
 In Table 5 they present results across different traveler types.
 We will try and replicate their findings.
@@ -204,7 +204,7 @@ We will try and replicate their findings.
 **Note:** The questions from here onward are less guided and therefore might be more difficult than the previous ones.
 They are deliberately designed to be more challenging.
 
-13. Create a new dataset `hotels_orm_tt` that selects the rows from `hotels_orm` where the year is 2009 or later and the `traveller_type` is not missing.
+13. Create a new dataset `hotels_orm_tt` that selects the rows from `hotels_orm` where the year is 2009 or later and the `traveler_type` is not missing.
 Also drop observations where `ash_interval` is not zero, so that we remove observations where the Ashenfelter dip may occur.
 
 ```{r}
