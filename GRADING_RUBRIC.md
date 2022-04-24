@@ -22,7 +22,7 @@
 | Q16      |       |          |          |          |        |
 | Q17      |       |          |          |          |        |
 
-Points: XX / 16 
+Points: XX / 17 
 
 ## EXTRA POINTS
 
