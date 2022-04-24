@@ -96,7 +96,7 @@ You can use equations or figures, but do so sparingly. (max 7 sentences).
 Write your answer here
 
 4. Explain what the 'parallel trends' assumption is. 
-   Why is it important in this application?
+   Why is it important for Proserpio and Zervas' application?
    Which figure (if any) provides support for the parallel trends assumption?
    
 Write your answer here
