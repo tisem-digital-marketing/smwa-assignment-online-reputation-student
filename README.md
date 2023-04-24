@@ -57,7 +57,7 @@ After you have cloned the repository to your machine, you can download the data 
 Open an RStudio session and use this folder as a project.
 The data is downloaded to the `data` sub-directory.
 
-Work on the assignment by adding your answers to `assignment_answer.Rmd` where marked.
+Work on the assignment by adding your answers to `assignment_answers.Rmd` where marked.
 Commit your changes periodically so that there is a record of the edits you are making.
 To make your edits available to the rest of the group, you will want to push your commits to the online repository.
 Do this with either: 
