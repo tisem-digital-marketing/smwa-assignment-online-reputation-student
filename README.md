@@ -1,10 +1,10 @@
 # Group Assignment: Online Reputation & Causal Inference
 
 [![Template Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Template Version](https://img.shields.io/badge/version-2022-green.svg)]()
+[![Template Version](https://img.shields.io/badge/version-2023-green.svg)]()
 
 **The group assignment is grade relevant.**
-Check the [course syllabus](https://tisem-digital-marketing.github.io/2022-smwa/assets/syllabus.pdf) for more details.
+Check the [course syllabus](https://tisem-digital-marketing.github.io/2023-smwa/assets/syllabus.pdf) for more details.
 
 ## Meta-Information 
 
@@ -16,22 +16,22 @@ Check the [course syllabus](https://tisem-digital-marketing.github.io/2022-smwa/
 
 ## Grading Information
 
-* Due Date: **May 13, 2022 at 23:59 pm**
+* Due Date: **May 12, 2023 at 23:59 pm**
 
 Submission is via GitHub Classroom.
 Your most recent commit that is on the `main` branch that is available online on GitHub before the due date will be graded.
 
-**You must include a html file "assignment_answer.html" in the GitHub repository by the submission deadline**
+**You must include a html file "assignment_answers.html" in the GitHub repository by the submission deadline**
 
 ## Instructions for Students
 
 **Only most recent commit on the main branch of the online GitHub repository when the assignment is due will be graded**.
 Your solution must use the `Rmarkdown` template provided in the assignment's repository that you cloned for this assignment. 
-This means your answers will be compiled into a file called `assignment_answer.html` when you use the 'Knit' button in RStudio.
-Failure to follow these steps and submit `assignment_answer.html` in your GitHub repository along with the `assignment_answer.Rmd`, will result in a assignment grade of **zero**.
+This means your answers will be compiled into a file called `assignment_answers.html` when you use the 'Knit' button in RStudio.
+Failure to follow these steps and submit `assignment_answers.html` in your GitHub repository along with the `assignment_answers.Rmd`, will result in a assignment grade of **zero**.
 
-Each group has been assigned a **group leader**.
-It is the group leaders job to "accept" the assignment via GitHub and then add all group members as collaborators to the group assignment. 
+Each group needs to assign a **group leader**.
+It is the group leader's job to "accept" the assignment via GitHub and then add all group members as collaborators to the group assignment. 
 To do this, the group leader will need each member's GitHub username.
 The group leader can add group members as follows:
 
@@ -75,4 +75,4 @@ from a terminal when your working directory is this folder, **or** use the Git p
 *   Course: [Social Media and Web Analytics](https://github.com/tisem-digital-marketing)
 *   Institute: [Dept of Marketing, TiSEM](https://www.tilburguniversity.edu/about/schools/economics-and-management/organization/departments/marketing)
 *   Template Link: [click here](https://github.com/tisem-digital-marketing/smwa-assignment-online-reputation-student)
-*   Current Version: [Spring 2022](https://tisem-digital-marketing.github.io/2022-smwa/)
+*   Current Version: [Spring 2023](https://tisem-digital-marketing.github.io/2023-smwa/)

@@ -4,8 +4,9 @@ author:
   - NAME
   - NAME
   - NAME
+  - NAME
 date: '`r format(Sys.time(), "%d %B, %Y")`'
-duedate: "13th of May, 2022"
+duedate: "12th of May, 2023"
 duetime: "23:59 CEST"
 output: html_document
 ---
@@ -22,7 +23,7 @@ This means your answers will be compiled into a file called `assignment_answers.
 Failure to follow these steps and submit `assignment_answers.html` in your GitHub repository along with the `assignment_answers.Rmd`, will result in a assignment grade of **zero**.
 Refer to the repository's `README.md` for instructions on how to complete the title and author fields for submission.
 
-Each group has been assigned a **group leader**.
+Each group needs to assign a **group leader**.
 It is the group leaders job to "accept" the assignment via GitHub and then add all group members as collaborators to the group assignment. 
 To do this, the group leader will need each member's GitHub username.
 The group leader can add group members as follows:
@@ -74,12 +75,13 @@ library(broom)
 library(modelsummary)
 ```
 
-1. Explain why firms might use public responses to reviews to manage their online reputation.
-   Should they respond relatively more to positive or negative reviews? Explain why. (max. 10 sentences)
+1. [4 points] Explain why firms might use public responses to reviews to manage their online reputation.
+   Should they respond relatively more to positive or negative reviews? Explain why.
+   (Max 5 sentences)
+   
+Write your answer here.
 
-Write your answer here
-
-2. Load the data for this exercise and name it `hotels_orm`. 
+2. [2 points] Load the data for this exercise and name it `hotels_orm`. 
 For this exercise you will only need the rows where `xplatform_dd_obs = 1`.
 Keep only the columns `hotel_id, year, stars, after, ta_dummy, first_response, cum_avg_stars_lag, log_count_reviews_lag, ta_dummy, t, ash_interval, traveler_type`.
 
@@ -89,24 +91,27 @@ Keep only the columns `hotel_id, year, stars, after, ta_dummy, first_response, c
 
 
 
-3. Proserpio & Zervas' empirical exercise uses what they call 'cross-platform' difference in differences.
+3. [5 points] Proserpio & Zervas' empirical exercise uses what they call 'cross-platform' difference in differences.
 Using your own words, explain their idea conceptually - and justify why it is valid. 
-You can use equations or figures, but do so sparingly. (max 7 sentences).
+You can use equations or figures, but do so sparingly. (Max 5 sentences).
 
-Write your answer here
+Write your answer here.
 
-4. Explain what the 'parallel trends' assumption is. 
-   Why is it important for Proserpio and Zervas' application?
+
+4. [5 points] Explain what the 'parallel trends' assumption is in the context of this application. 
+   Why is it important?
    Which figure (if any) provides support for the parallel trends assumption?
-   
-Write your answer here
 
-5. What is the 'Ashenfelter dip'? 
-   Why do the authors believe they see a pattern akin to an Ashenfelter dip in their application.
+Write your answer here.
 
-Write your answer here
 
-6. First, lets compute the 'simple' Difference in Difference estimate using differences in means.
+5. [3 points] What is the 'Ashenfelter dip'? 
+   Why do the author's believe they see a pattern akin to an Ashenfelter dip in their application.
+
+Write your answer here.
+
+
+6. [3 points] First, lets compute the 'simple' Difference in Difference estimate using differences in means.
   (a) Create a data frame with two rows and two columns where the rows take the values of `first_response` = 0 or 1, 
       and the columns take the values of `ta_dummy` = 0 or 1. 
       The values in the data frame should be the respective group means of `stars`.
@@ -136,13 +141,15 @@ To relationship between the variables in the equation above and the variables in
 * $TripAdvisor =$ `ta_dummy`, and 
 * $After_{ijt}  \times TripAdvisor_{ij}$ = `after`
 
-7. Explain why $\delta$, i.e. the coefficient for the interaction term $After_{ijt} \times TripAdvisor_{ij}$ is the difference in difference estimate from the regression (i.e. the coefficient you want to estimate).
+7. [4 points] Explain why $\delta$, i.e. the coefficient for the interaction term $After_{ijt} \times TripAdvisor_{ij}$ is the difference in difference estimate from the regression (i.e. the coefficient you want to estimate).
 
-Write your answer here
+**HINT**: Use equations to show that you can isolate $\delta$ in a similar way to the difference in differences table described in lectures.
 
-8. Now, lets replicate Table 4 of Proserpio and Zervas. 
+Write your answer here.
+
+8. [4 points] Now, lets replicate Table 4 of Proserpio and Zervas. 
   Estimate the model outlined above using the `fixest` package.
-  In particular, produce three regression models:
+  In particular, produce the following regression models:
 
   (a) `model_1` should be the regression equivalent of the simple DiD in 6 using the whole dataset. This estimate is not in Table 4 of Proserpio and Zervas.
   (b) `model_2` should extend `model_1` by adding the fixed effects and uses the whole dataset.
@@ -173,38 +180,30 @@ model_x <- fixest(YOUR_CODE ~ YOUR_CODE +
 ```
 
 
-9. Report your estimates.
+9. [2 points] Report your estimates.
 
 ```{r}
 # Write your answer here
 ```
 
 
-10. Interpret the value of the coefficients you deem most important. 
-    Are these effects significant from a marketing perspective (i.e. Should they shape marketing practice)? (max. 7 sentences)
+10. [4 points] Interpret the value of the coefficients you deem most important. 
+    Are these effects significant from a marketing perspective (i.e. Should they shape marketing practice)? (max. 5 sentences)
 
-Write your answer here
+Write your answer here.
 
-11. Explain why management responses to reviews can lead to improved hotel ratings. 
+11. [5 points] Explain why management responses to reviews can lead to improved hotel ratings. 
   Can you support this argument using any of the results in Proserpio and Zervas' work? 
-  Be specific as to which results you can use and how they support your arguments. (max. 10 sentences).
+  Be specific as to which results you can use and how they support your arguments. (max. 5 sentences).
 
-Write your answer here
+Write your answer here.
 
-12. Given the results, explain the costs and benefits of management responses from the perspective of business managers, review platforms and consumers. 
-(max 10 sentences). 
-
-Write your answer here
-
-The effect we found above might have different magnitudes for different types of travelers.
+The effect we found above might have different magnitudes for different types of travellers.
 The Proserpio and Zervas data includes information on the type of travel for some rows of data for the years 2009 and after.
 In Table 5 they present results across different traveler types.
 We will try and replicate their findings.
 
-**Note:** The questions from here onward are less guided and therefore might be more difficult than the previous ones.
-They are deliberately designed to be more challenging.
-
-13. Create a new dataset `hotels_orm_tt` that selects the rows from `hotels_orm` where the year is 2009 or later and the `traveler_type` is not missing.
+12. [3 points] Create a new dataset `hotels_orm_tt` that selects the rows from `hotels_orm` where the year is 2009 or later and the `traveller_type` is not missing.
 Also drop observations where `ash_interval` is not zero, so that we remove observations where the Ashenfelter dip may occur.
 
 ```{r}
@@ -212,11 +211,11 @@ Also drop observations where `ash_interval` is not zero, so that we remove obser
 ```
 
 
-
 The variable `traveler_type` takes one of 5 numeric values, and it's unclear which is which without further information.
 Run the following code to attach labels to traveler types:
 
-```{r, eval = FALSE}
+```{r, eval=FALSE}
+# REMARK: turn eval=FALSE to eval=TRUE to run this chunk
 hotels_orm_tt <-
   hotels_orm_tt %>%
   # remove travel type 'other'
@@ -232,14 +231,14 @@ hotels_orm_tt <-
          )
 ```
 
-14. Estimate the regression models to replicate Table 5 of Proserpio and Zervas. You should use your answers to (8) as a starting point for the code.
+13. [4 points] Estimate the regression models to replicate Table 5 of Proserpio and Zervas. You should use your answers to (8) as a starting point for the code.
 
 ```{r}
 # Write your answer here
 ```
 
 
-15. Present your regression estimates in a regression table. 
+14. [2 points] Present your regression estimates in a regression table. 
 Your final answer should resemble Table 5 in the paper, but you do not need to match it precisely.
 
 ```{r}
@@ -247,13 +246,13 @@ Your final answer should resemble Table 5 in the paper, but you do not need to m
 ```
 
 
-16. Do you find significant differences in the estimates across travel types?
-Can you explain why these differences may or may not be present? (max. 7 sentences)
+15. [4 points] Do you find significant differences in the estimates across travel types?
+Can you explain why these differences may or may not be present? (max. 5 sentences)
 
-Write your answer here
+Write your answer here.
 
-17. Apart from the "cross-platform design", the Difference in Differences strategy adopted by Proserpio and Zervas differs across one other important dimension from the traditional design. 
+16. [5 points] Apart from the "cross-platform design", the Difference in Differences strategy adopted by Proserpio and Zervas differs across one other important dimension from the basic design. 
 What dimension is this?
 What effects might it have on the results and their interpretability?  
 
-Write your answer here
+Write your answer here.
