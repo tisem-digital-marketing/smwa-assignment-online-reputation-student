@@ -83,7 +83,7 @@ Write your answer here.
 
 2. [2 points] Load the data for this exercise and name it `hotels_orm`. 
 For this exercise you will only need the rows where `xplatform_dd_obs = 1`.
-Keep only the columns `hotel_id, year, stars, after, ta_dummy, first_response, cum_avg_stars_lag, log_count_reviews_lag, ta_dummy, t, ash_interval, traveler_type`.
+Keep only the columns `hotel_id, year, stars, after, ta_dummy, first_response, cum_avg_stars_lag, log_count_reviews_lag, t, ash_interval, traveler_type`.
 
 ```{r}
 # Write your answer here
@@ -200,7 +200,7 @@ Write your answer here.
 
 The effect we found above might have different magnitudes for different types of travellers.
 The Proserpio and Zervas data includes information on the type of travel for some rows of data for the years 2009 and after.
-In Table 5 they present results across different traveler types.
+In Table 6 they present results across different traveler types.
 We will try and replicate their findings.
 
 12. [3 points] Create a new dataset `hotels_orm_tt` that selects the rows from `hotels_orm` where the year is 2009 or later and the `traveller_type` is not missing.
