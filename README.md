@@ -68,6 +68,12 @@ git push
 
 from a terminal when your working directory is this folder, **or** use the Git pane inside RStudio (top right corner) to push using the green "up" arrow.
 
+## Grading Information
+
+* Points for each question are clearly marked in the answer document.
+* Disputes over grades earned in the assignment must be made in writing, no later than 48 hours after their release. You must clearly state which questions you think are graded incorrectly.
+* Disputes take the form of a request for the assignment to be regraded in **full.** Your grade may increase or decrease as a result of a regrade.
+* The grading rubric used by the assessor is available in this repository
 
 ## Template Meta-Information
 
