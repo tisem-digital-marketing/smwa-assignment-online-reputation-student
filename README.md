@@ -14,7 +14,7 @@ Check the [course syllabus](https://tisem-digital-marketing.github.io/2023-smwa/
 * GitHub Handles: YOUR GH HANDLES
 * Group Leader: YOUR NAME
 
-## Grading Information
+## Submission Information
 
 * Due Date: **May 12, 2023 at 23:59**
 
